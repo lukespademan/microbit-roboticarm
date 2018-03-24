@@ -19,8 +19,10 @@ for m in r.moves:
 
 smoves["lo"] = "light-on"
 dir_to_move = {
-    "l": "bc",
-    "r": "bac",
+    "l0": "bc",
+    "r0": "bac",
+    "l1": "go",
+    "r1": "gc",
     "d0": "su",
     "u0": "sd",
     "u1": "wd",
