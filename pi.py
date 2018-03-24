@@ -41,7 +41,7 @@ s.stopbits = serial.STOPBITS_ONE
 while True:
     data = s.readline().decode("UTF-8").rstrip()
     if data:
-        print(data, end="")
+        print(data)
         if data in dir_to_move:
             d = dir_to_move[data]
         else:
