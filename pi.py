@@ -21,10 +21,10 @@ smoves["lo"] = "light-on"
 dir_to_move = {
     "l": "bc",
     "r": "bac",
-    "d:0": "su",
-    "u:0": "sd",
-    "u:1": "wd",
-    "d:1": "wu",
+    "d0": "su",
+    "u0": "sd",
+    "u1": "wd",
+    "d1": "wu",
     "f": None
     }
 print(smoves)
