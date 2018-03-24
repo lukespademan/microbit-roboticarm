@@ -1,7 +1,9 @@
 # Microbit Roboticarm
 This allows you to control the maplin robotic arm with two microbits and a raspberrypi
 
-It currenly supports: Base rotation, Shouler movement
+It currenly supports: Base rotation, Shouler movement, Wrist roation, Jaw open/close
+
+To add: light on/off
 
 ## maplinrobot.py
 taken from the magpi? (i think). This file is imported by pi.py and comminucates with the robotic arm
