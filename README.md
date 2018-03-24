@@ -6,7 +6,7 @@ It currenly supports: Base rotation, Shouler movement, Wrist roation, Jaw open/c
 To add: light on/off
 
 ## maplinrobot.py
-taken from the magpi? (i think). This file is imported by pi.py and comminucates with the robotic arm
+https://github.com/peterlavelle/maplinarm. This file is imported by pi.py and comminucates with the robotic arm
 
 ## pi.py
 this takes the data from a microbit (microbitdongle.py) which it commmunicates with over serial, and uses maplinrobot.py to move the robot
