@@ -39,6 +39,7 @@ def get_dir():
 
 while True:
     d = get_dir()
-    radio.send(d)
+    to_add = ":1" if button_a.is_pressed() else ":0"
+    radio.send(d+ to_add)
     display.show(images[d])
     sleep(250)

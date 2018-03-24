@@ -21,8 +21,10 @@ smoves["lo"] = "light-on"
 dir_to_move = {
     "l": "bc",
     "r": "bac",
-    "d": "su",
-    "u": "sd",
+    "d:0": "su",
+    "u:0": "sd",
+    "u:1": "wd",
+    "d:1": "wu",
     "f": None
     }
 print(smoves)
@@ -40,7 +42,10 @@ while True:
     data = s.readline().decode("UTF-8").rstrip()
     if data:
         print(data, end="")
-        d = dir_to_move[data]
+        if data in dir_to_move:
+            d = dir_to_move[data]
+        else:
+            d = dir_to_move[data[0]]
         if d:
             c = smoves[d]
             print(d, c)
