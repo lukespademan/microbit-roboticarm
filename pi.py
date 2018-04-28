@@ -3,6 +3,7 @@ import sys
 import time
 import os
 import serial
+from microbitdongle import Dongle
 
 #import the maplinrobot class
 from maplinrobot import MaplinRobot
@@ -31,18 +32,10 @@ dir_to_move = {
     "u2": "ed",  # elbow down
     "f": None
     }
-
-PORT = "/dev/ttyACM0"
-BAUD = 115200
-s = serial.Serial(PORT)
-s.baudrate = BAUD
-s.parity = serial.PARITY_NONE
-s.databits = serial.EIGHTBITS
-s.stopbits = serial.STOPBITS_ONE
-
+mb = Dongle(debug=True)
 
 while True:
-    data = s.readline().decode("UTF-8").rstrip()
+    data = mb.recv()
     if data:
         print(data)
         if data in dir_to_move:
